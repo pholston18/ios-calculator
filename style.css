@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-boxs;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #505050;
+}
+
+.calculator {
+    width: fit-content;
+    background-color: #1C1C1C;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0.75rem;
+}
+
+#display {
+    font-size: 3.5rem;
+    text-align: right;
+    margin-bottom: 1rem;
+    border: none;
+    background-color: #1C1C1C;
+    color: white;
+}
+
+button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    background-color: #505050;
+    color: white;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #999;
+}
+
+button:active {
+    background-color: #c4c3c3;
+}
+
+.operation {
+    background-color: #FF9500;
+}
+
+.operation:hover {
+    background-color: #fcbb60;
+}
+
+.operation:active {
+    background-color: #f8c988;
+}
+
+.controls {
+    background-color: #D4D4D2;
+}
+
+.controls:hover {
+    background-color: #a7a7a3;
+}
+
+.controls:active {
+    background-color: #878785;
+}
+
+.active-operation {
+    color: #FF9500;
+    background-color: white;
+    transition: background-color 0.8s;
+}
+
+.active-operation:hover {
+    background-color: white;
+}
+
+#zero {
+    grid-column: 1 / 3;
+    text-align: left;
+    padding-left:4.2rem;
+}
+
+#equal {
+    background-color: #FF9500;
+}
+
+#equal:hover {
+    background-color: #fcbb60;
+}
+
+#equal:active {
+    background-color: #f8c988;
+}
